@@ -12,6 +12,15 @@
 
 ## Install
 
+[Create a Gitlab access
+token](https://docs.gitlab.com/ce/user/profile/personal_access_tokens.html)
+for the user who should be used for making the notes. Then [configure it as a
+CI environment
+variable](https://docs.gitlab.com/ce/ci/variables/#secret-variables) named
+`GITLAB_ACCESS_TOKEN`.
+
+In CI:
+
 ```
 $ go install github.com/fahrradflucht/gitlab-mr-note
 ```
