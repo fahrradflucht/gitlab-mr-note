@@ -22,8 +22,13 @@ variable](https://docs.gitlab.com/ce/ci/variables/#secret-variables) named
 In CI:
 
 ```
-$ go install github.com/fahrradflucht/gitlab-mr-note
+$ wget https://github.com/fahrradflucht/gitlab-mr-note/releases/download/v1.0.0/gitlab-mr-note_linux_amd64 -O gitlab-mr-note
+$ chmod +x gitlab-mr-note
 ```
+
+Most likely `linux_amd64` will be the correct architecture but if your runner
+has a different architecture get the correct link from the [release
+page](https://github.com/fahrradflucht/gitlab-mr-note/releases).
 
 ## Usage
 Just pipe your desired note text into it:
